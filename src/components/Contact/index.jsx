@@ -6,6 +6,7 @@ import { FaInstagram } from "react-icons/fa";
 import { PiTelegramLogo } from "react-icons/pi";
 import "./index.scss";
 import { useFormik } from "formik";
+import axios from "axios";
 
 const Contact = () => {
   const location = useLocation();
@@ -13,13 +14,24 @@ const Contact = () => {
 
   const formik = useFormik({
     initialValues: {
-      yName: '',
-      gmail: '',
+      name: '',
+      email: '',
       message: '',
     },
     // validationSchema: 
     onSubmit: async (values, actions) => {
-      console.log(values);
+      if (!values.email?.length || !values.name?.length || !values.message?.length) alert("field cannot be empty!")
+      try {
+        const res = await axios.post('https://script.google.com/macros/s/AKfycbwanLjBdtIAqMRngmzYdZ2pEi1X_jTXymwkH43SFqgmJrd2P2hbC4acoFNC8_IxYWDZtg/exec', values, {
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+          }
+        });
+        alert("Вы успешно оставили заявку!")
+        
+      } catch (error) {
+        console.error('Error:', error);
+      }
       actions.resetForm();
     }
   })
@@ -30,12 +42,12 @@ const Contact = () => {
       <div className="wrapper">
         <form onSubmit={formik.handleSubmit}>
           <div>
-            <label htmlFor="yName">Имя</label>
-            <input type="text" id="yName" name="yName" value={formik.values.yName} onChange={formik.handleChange}/>
+            <label htmlFor="name">Имя</label>
+            <input type="text" id="name" name="name" value={formik.values.name} onChange={formik.handleChange}/>
           </div>
           <div>
-            <label htmlFor="gmail">Gmail</label>
-            <input type="email" id="gmail" name="gmail" value={formik.values.gmail} onChange={formik.handleChange}/>
+            <label htmlFor="email">Gmail</label>
+            <input type="email" id="email" name="email" value={formik.values.email} onChange={formik.handleChange}/>
           </div>
           <div>
             <label htmlFor="message">Сообщение</label>
