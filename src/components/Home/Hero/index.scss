@@ -82,6 +82,35 @@
   }
 }
 
+@media (max-width: 1024px) {
+  #hero {
+    margin: 10px auto!important;
+  }
+  #hero .first-wrapper div .desc-wrapper img, #hero .first-wrapper div .stars {
+    display: none!important;
+  }
+  #hero .first-wrapper div .name-wrapper div  {
+    span{
+      font-size: 50px;
+    }
+    .line {
+      min-width: 200px;
+      max-width: 250px;
+    }
+  }
+  #hero a {
+    margin: 25px auto!important;
+  }
+  #hero .first-wrapper div .desc-wrapper p {
+    width: 90%;
+  }
+  #hero .first-wrapper img {
+    margin: auto;
+    width: 400px!important;
+    height: auto!important;
+  }
+}
+
 /* Tablet responsive */
 @media (max-width: 768px) {
   #hero {
