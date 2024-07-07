@@ -1,0 +1,137 @@
+#capsule {
+  margin: 0 auto;
+  max-width: 1420px;
+  padding: 30px 0;
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2:first-child {
+      font-family: Montserrat Alternates;
+      font-size: 96px;
+      font-weight: 275;
+      line-height: 117.02px;
+      text-align: center;
+    }
+    h2:last-child {
+      font-family: "Neolost";
+      font-size: 96px;
+      font-weight: 400;
+      line-height: 115.2px;
+      text-align: center;
+    }
+  }
+  .descr {
+    padding: 40px 0;
+    h4 {
+      margin: 20px 0;
+      font-family: Montserrat Alternates;
+      font-size: 48px;
+      font-weight: 275;
+      line-height: 58.51px;
+      text-align: left;
+      color: #ef751d;
+    }
+    li,
+    p {
+      font-family: Montserrat Alternates;
+      font-size: 36px;
+      font-weight: 275;
+      line-height: 43.88px;
+      text-align: left;
+    }
+  }
+  .contact {
+    margin: 40px 0;
+    padding: 40px;
+    border: 1px solid #ef751d;
+    color: #ef751d;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: Montserrat Alternates;
+    font-size: 48px;
+    font-weight: 275;
+    line-height: 58.51px;
+  }
+}
+
+@media (max-width: 768px) {
+  #capsule {
+    width: 95%;
+
+    .header {
+      h2:first-child {
+        font-size: 50px;
+        text-align: center;
+      }
+      h2:last-child {
+        font-size: 50px;
+        text-align: center;
+      }
+      span {
+        font-size: 50px;
+        text-align: center;
+      }
+    }
+    .right {
+      display: none !important;
+    }
+    .contact {
+      margin: 20px auto;
+      width: 90%;
+      span {
+        font-size: 30px;
+      }
+    }
+    p,
+    li {
+      font-size: 22px !important;
+    }
+    h4,
+    span {
+      font-size: 25px;
+    }
+  }
+}
+
+
+@media (max-width: 480px) {
+  #capsule {
+    .header {
+      h2:first-child {
+        margin-bottom: 20px;
+      }
+      h2,
+      span {
+        line-height: 70px !important;
+        max-width: 100% !important;
+        font-size: 40px !important;
+        word-wrap: break-word !important;
+      }
+    }
+    .contact {
+      width: 90vw !important;
+      padding: 5px !important;
+      span {
+        font-size: 18px !important;
+      }
+    }
+    .descr {
+      h4,
+      span {
+        font-size: 22px !important;
+        line-height: normal !important;
+      }
+      p,
+      li,
+      ul {
+        font-size: 18px !important;
+        line-height: normal !important;
+      }
+    }
+  }
+}

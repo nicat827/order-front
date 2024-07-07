@@ -1,0 +1,45 @@
+#heading {
+  margin: 0 auto;
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  gap: 20px;
+  span {
+    width: 25%;
+    border: 1px solid #ef751d;
+  }
+  h1 {
+    text-transform: uppercase;
+    font-family: "Neolost";
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 115.2px;
+    text-align: center;
+    color: #ef751d;
+  }
+}
+
+
+@media (max-width: 768px) {
+  #heading {
+    h1{
+      font-size: 55px!important;
+      line-height: normal;
+    }
+  }
+}
+
+
+@media (max-width: 480px) {
+  #heading {
+    span{
+      display: none !important;
+    } 
+    h1{
+      font-size: 45px!important;
+      line-height: normal;
+    }
+  }
+}
+

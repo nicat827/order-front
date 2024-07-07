@@ -1,0 +1,169 @@
+#gallery{
+    max-width: 1420px;
+    margin: 0 auto;
+}
+
+@media (max-width: 320px){
+    #gallery {
+        .wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            max-width: 320px !important;
+        }
+    }
+
+    .table-wrapper {
+      justify-content: flex-start !important;
+      .table-custom {
+        width: 95%;
+      }
+    }
+}
+
+@media (max-width: 768px){
+    #gallery {
+        .wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+/* AdminIndex.css */
+  .table-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .ant-pagination {
+
+      .ant-pagination-item-active {
+        a {
+          color: black;
+
+        }
+      }
+        li {
+          a {
+            color:white;
+
+          }
+          button {
+            color: white
+          }
+        }
+    }
+  }
+  @media screen and (max-width:768px) {
+
+    .table-custom {
+      width: 70%;
+    }
+  }
+  @media screen and (max-width:445px) {
+
+ 
+    .table-custom {
+      width: 50%;
+    }
+  }
+  .table-custom {
+    border: 1px solid white;
+    border-top: none;
+    border-radius: 8px;
+
+  }
+  .table-custom .ant-table-thead > tr > th {
+    background-color: #4CAF50; /* Измените цвет фона заголовков */
+    color: white; /* Измените цвет текста заголовков */
+    max-width: 200px !important;
+    width: 200px;
+  }
+  
+  .table-custom .ant-table-tbody > tr > td {
+    background-color: #081E1B; /* Измените цвет фона строк */
+  }
+  
+  .table-custom .ant-table-tbody > tr:hover > td{
+    background-color: #081E1B; /* Измените цвет фона строк */
+  }
+  .ant-table-tbody > tr:hover > td {
+    background-color: #081E1B; /* Цвет фона ячейки при hover */
+  }
+
+
+  .ant-table-tbody > tr > td:first-child {
+    color: white; /* Цвет текста в первой колонке */
+  }
+
+  
+ .edit-icon {
+    color: white;
+ }
+//update page
+ .update-gallery {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      margin-bottom: 10px;
+    }
+    
+    @media screen and (max-width:425px) {
+        h1 {
+          font-size: 38px;
+        }
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 70%;
+      .btns-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      input {
+        background-color: black;
+        margin: 10px;
+        padding: 10px;
+      }
+      .submit-btn {
+        background-color: green;
+      }
+      button {
+        max-width: 50%;
+        margin: 5px;
+        background-color: red;
+      }
+    }
+ }
+// Admin service
+.service-wrapper {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      margin-left: 15px;
+      margin-right: 10px;
+    }
+  }
+}

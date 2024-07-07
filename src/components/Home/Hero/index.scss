@@ -1,0 +1,170 @@
+#hero {
+  margin: 0 auto;
+  margin-top: 50px;
+  max-width: 1420px;
+  .stars-tablet {
+    display: none;
+  }
+  .first-wrapper {
+    width: 100%;
+    display: flex;
+    img {
+      width: 450px;
+      height: 633px;
+      pointer-events: none;
+    }
+    div {
+      margin-top: 15px;
+      margin-left: 20px;
+
+      .stars {
+        height: 50px;
+        width: 650px;
+        margin-left: 20px;
+        margin-top: 30px;
+      }
+      .name-wrapper {
+        div {
+          display: flex;
+          margin: 0;
+          align-self: center;
+        }
+        .line {
+          width: 349px;
+          height: 1px;
+          margin: 5px;
+          background-color: #ef751d;
+        }
+        span {
+          text-transform: uppercase;
+          color: #ef751d;
+          font-family: "Neolost";
+          font-size: 66px;
+          font-weight: 400;
+        }
+      }
+
+      .desc-wrapper {
+        display: flex;
+        p {
+          font-weight: 250;
+          font-family: "Montserrat";
+          font-size: 25px;
+          width: 45%;
+          margin: 0;
+          margin-right: 15px;
+        }
+        img {
+          width: 278px;
+          height: 316px;
+          margin-left: 40px;
+          pointer-events: none;
+        }
+      }
+    }
+  }
+  a {
+    margin-top: 25px;
+    width: 96% !important;
+    background: transparent;
+    text-transform: uppercase;
+    border: 1px solid #ef751d;
+    color: #ef751d;
+    font-family: "Montserrat Alternates";
+    font-weight: 275;
+    font-size: 30px;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+/* Tablet responsive */
+@media (max-width: 768px) {
+  #hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+    .first-wrapper div .name-wrapper span {
+      font-size: 50px;
+    }
+    .first-wrapper div .desc-wrapper {
+      p {
+        width: 100% !important;
+        font-size: 22px;
+      }
+    }
+    width: 100% !important;
+    .first-wrapper {
+      padding: 20px;
+      width: 100% !important;
+      display: flex;
+      justify-content: space-between !important;
+      .main-img {
+        width: 250px !important;
+        height: 400px !important;
+      }
+    }
+  }
+  .line {
+    width: 20% !important;
+  }
+  .descImg {
+    display: none !important;
+  }
+  .stars-tablet {
+    margin: 30px 0;
+
+    display: flex !important;
+    width: 85% !important;
+  }
+  .stars {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  #hero {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    .name-wrapper {
+      span {
+        font-size: 30px !important;
+      }
+    }
+    .desc-wrapper,
+    #sign-to-service {
+      width: 90% !important;
+      font-size: 16px !important;
+      p {
+        font-size: 16px !important;
+      }
+    }
+    .first-wrapper {
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      flex-direction: column !important;
+    }
+  }
+  a{
+    width: 100% !important;
+    font-size: 20px !important;
+    img {
+      width: 30px !important;
+    }
+  }
+}
