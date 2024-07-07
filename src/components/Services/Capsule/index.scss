@@ -135,3 +135,42 @@
     }
   }
 }
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  #capsule {
+    padding: 10px;
+    .header {
+      h2:first-child {
+        margin-bottom: 28px;
+      }
+      h2,
+      span {
+        line-height: 85px !important;
+        max-width: 100% !important;
+        font-size: 48px !important;
+        word-wrap: break-word !important;
+      }
+    }
+    .contact {
+      width: 90vw !important;
+      padding: 10px !important;
+      span {
+        font-size: 20px !important;
+      }
+    }
+    .descr {
+      h4,
+      span {
+        font-size: 24px !important;
+        line-height: normal !important;
+      }
+      p,
+      li,
+      ul {
+        font-size: 22px !important;
+        line-height: normal !important;
+      }
+    }
+  }
+}

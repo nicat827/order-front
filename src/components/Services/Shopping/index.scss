@@ -140,6 +140,57 @@
   }
 }
 
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  #shopping{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .header {
+      h2:first-child {
+        margin-bottom: 28px;
+      }
+      h2,
+      span {
+        line-height: 85px !important;
+        max-width: 100% !important;
+        font-size: 48px !important;
+        word-wrap: break-word !important;
+      }
+    }
+    .contact {
+      width: 90vw !important;
+      padding: 10px !important;
+      span {
+        font-size: 20px !important;
+      }
+    }
+    h4,
+    span {
+      font-size: 24px !important;
+      line-height: normal !important;
+    }
+    p,
+    li,
+    ul {
+      font-size: 22px !important;
+      line-height: normal !important;
+    }
+  }
+  #shopping .formats-desc .div10, #shopping .formats-desc .div4 {
+    display: none;
+  }
+  #shopping .formats-desc{
+    padding: 10px;
+    grid-template-columns: repeat(2, 1fr)!important;
+  }
+  #shopping .header h2 {
+    text-align: center!important;
+  }
+}
+
 @media (max-width: 768px) {
   #shopping {
     display: flex;
