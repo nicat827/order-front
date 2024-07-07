@@ -89,7 +89,7 @@ const Shopping = ({services}) => {
           <img src={div6} alt="" />
         </div>
         <div className="div7"></div>
-        <div className="div">
+        <div className="div8">
           <img src={div8} alt="" />
         </div>
         <div className="div9"></div>
