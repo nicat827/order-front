@@ -42,6 +42,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #081e1b;
+  overflow-x: hidden;
 }
 
 ul {

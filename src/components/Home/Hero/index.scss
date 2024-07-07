@@ -95,15 +95,28 @@
       font-size: 50px;
     }
     .line {
-      min-width: 200px;
+      min-width: 150px;
       max-width: 250px;
     }
   }
   #hero a {
     margin: 25px auto !important;
   }
+  .first-wrapper div {
+    margin-left:  0 !important;
+  }
   #hero .first-wrapper div .desc-wrapper p {
-    width: 90%;
+    width: 80%;
+    margin-left: 15px;
+  }
+  .first-wrapper .name-wrapper {
+    margin-left: 15px !important;
+    div {
+        .line {
+          width: 150px !important;
+        }
+
+    }
   }
   #hero .first-wrapper img {
     margin: auto;

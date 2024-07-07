@@ -41,7 +41,7 @@
 }
 
 /* Mobile styles */
-@media (max-width: 320px) {
+@media (max-width: 470px) {
   header {
     .wrapper {
       display: flex !important;
